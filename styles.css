@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.sidebarBox {
+    flex: 1;
+    min-width: 200px;
+    max-width: 500px;
+    min-height: 500px;
+    max-height: fit-content;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.profileBox {
+    min-width: 150px;
+    max-width: 200px;
+    min-height: 150px;
+    max-height: 200px;
+    background-color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: auto;
+}
+
+.profileBox img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.sidebarBox h2 {
+    text-align: center;
+}
+
+.sidebarBox ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebarBox ul li {
+    margin: 15px 0;
+}
+
+.sidebarBox ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebarBox ul li a:hover {
+    background-color: #575757;
+}
+
+.mainBox {
+    flex: 3;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    min-width: 0;
+    border-radius: 15px;
+    padding: 15px;
+    position: relative;
+    min-width: 0;
+    
+}
+
+.mainBox h1 {
+    margin-top: 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbarbutton {
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+.navbarbutton:hover {
+    background-color: #575757;
+}
+
+
+@media (max-width: 768px) {
+    .sidebarBox {
+        width: 100%;
+        order: 1;
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+
+    .mainBox {
+        width: 100%;
+        order: 2;
+    }
+}
